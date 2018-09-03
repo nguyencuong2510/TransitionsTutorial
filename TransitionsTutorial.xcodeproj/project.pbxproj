@@ -12,6 +12,10 @@
 		843A91DB213DF34200641FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843A91D9213DF34200641FD2 /* Main.storyboard */; };
 		843A91DD213DF34400641FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843A91DC213DF34400641FD2 /* Assets.xcassets */; };
 		843A91E0213DF34400641FD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843A91DE213DF34400641FD2 /* LaunchScreen.storyboard */; };
+		843A91E8213DF3F700641FD2 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A91E7213DF3F700641FD2 /* ActionViewController.swift */; };
+		843A91EA213DF41100641FD2 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A91E9213DF41100641FD2 /* ItemTableViewController.swift */; };
+		843A91EC213DF53B00641FD2 /* bike_traveler.png in Resources */ = {isa = PBXBuildFile; fileRef = 843A91EB213DF53B00641FD2 /* bike_traveler.png */; };
+		843A91EE213DF6A700641FD2 /* CustomPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A91ED213DF6A700641FD2 /* CustomPresentAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		843A91DC213DF34400641FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843A91DF213DF34400641FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843A91E1213DF34400641FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843A91E7213DF3F700641FD2 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		843A91E9213DF41100641FD2 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		843A91EB213DF53B00641FD2 /* bike_traveler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike_traveler.png; sourceTree = "<group>"; };
+		843A91ED213DF6A700641FD2 /* CustomPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,13 @@
 		843A91D4213DF34200641FD2 /* TransitionsTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				843A91EB213DF53B00641FD2 /* bike_traveler.png */,
 				843A91D5213DF34200641FD2 /* AppDelegate.swift */,
 				843A91D7213DF34200641FD2 /* ViewController.swift */,
 				843A91D9213DF34200641FD2 /* Main.storyboard */,
+				843A91ED213DF6A700641FD2 /* CustomPresentAnimationController.swift */,
+				843A91E7213DF3F700641FD2 /* ActionViewController.swift */,
+				843A91E9213DF41100641FD2 /* ItemTableViewController.swift */,
 				843A91DC213DF34400641FD2 /* Assets.xcassets */,
 				843A91DE213DF34400641FD2 /* LaunchScreen.storyboard */,
 				843A91E1213DF34400641FD2 /* Info.plist */,
@@ -125,6 +137,7 @@
 				843A91E0213DF34400641FD2 /* LaunchScreen.storyboard in Resources */,
 				843A91DD213DF34400641FD2 /* Assets.xcassets in Resources */,
 				843A91DB213DF34200641FD2 /* Main.storyboard in Resources */,
+				843A91EC213DF53B00641FD2 /* bike_traveler.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +150,9 @@
 			files = (
 				843A91D8213DF34200641FD2 /* ViewController.swift in Sources */,
 				843A91D6213DF34200641FD2 /* AppDelegate.swift in Sources */,
+				843A91EE213DF6A700641FD2 /* CustomPresentAnimationController.swift in Sources */,
+				843A91EA213DF41100641FD2 /* ItemTableViewController.swift in Sources */,
+				843A91E8213DF3F700641FD2 /* ActionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
