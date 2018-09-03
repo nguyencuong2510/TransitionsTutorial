@@ -22,7 +22,9 @@ class CustomPresentAnimationController: NSObject, UIViewControllerAnimatedTransi
         let finalFrameForVC = transitionContext.finalFrame(for: toViewController)
         let containerView = transitionContext.containerView
         
-        toViewController.view.frame = finalFrameForVC.offsetBy(dx: 0, dy: toViewController.view.bounds.size.height)
+        //MARK: trả về một hình chữ nhật có origin được offset (bù đắp) từ view Final
+        // dx and dy: giá trị offset từ vị trí x và y
+        toViewController.view.frame = finalFrameForVC.offsetBy(dx: 50, dy: -toViewController.view.bounds.size.height)
         containerView.addSubview(toViewController.view)
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.0, options: .curveLinear, animations: {
