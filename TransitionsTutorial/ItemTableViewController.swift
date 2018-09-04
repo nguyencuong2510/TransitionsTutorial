@@ -11,6 +11,8 @@ import UIKit
 class ItemTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
 
     let customPresentAnimationController = CustomPresentAnimationController()
+    let customDissmisAnimationController = CustomDissmisAnimationController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,5 +45,9 @@ class ItemTableViewController: UITableViewController, UIViewControllerTransition
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return customPresentAnimationController
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customDissmisAnimationController
     }
 }
