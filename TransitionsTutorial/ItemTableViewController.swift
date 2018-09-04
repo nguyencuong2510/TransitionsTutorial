@@ -8,14 +8,17 @@
 
 import UIKit
 
-class ItemTableViewController: UITableViewController, UIViewControllerTransitioningDelegate {
+class ItemTableViewController: UITableViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
 
     let customPresentAnimationController = CustomPresentAnimationController()
     let customDissmisAnimationController = CustomDissmisAnimationController()
+    let customNavigationAnimationController = CustomNavigationAnimationController()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.delegate = self
     }
     // MARK: - Table view data source
 
@@ -49,5 +52,10 @@ class ItemTableViewController: UITableViewController, UIViewControllerTransition
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return customDissmisAnimationController
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        customNavigationAnimationController.reverse = operation == .pop
+        return customNavigationAnimationController
     }
 }
